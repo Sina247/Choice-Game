@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Choice Game</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="question" id="question">Which do you prefer?</div>
+
+			<div class="option-group" role="radiogroup">
+				<div class="either-option" role="radio" tabindex="0" aria-checked="false"></div>
+
+				<div class="either-option" role="radio" tabindex="0" aria-checked="false"></div>
+			</div>
+
+			<div id="feedback" class="feedback" aria-live="polite"></div>
+
+			<table class="history-table">
+				<thead>
+					<tr>
+						<th>Question</th>
+
+						<th>Your Choice</th>
+					</tr>
+				</thead>
+				<tbody id="historyBody"></tbody>
+			</table>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
